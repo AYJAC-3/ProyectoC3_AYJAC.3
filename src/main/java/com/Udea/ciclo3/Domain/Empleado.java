@@ -44,5 +44,5 @@ public class Empleado {
                         "Empresa a la que Pertenece:\n" + empresaPertenece + "\n";
 
     }
-
+    //intento1000
 }
