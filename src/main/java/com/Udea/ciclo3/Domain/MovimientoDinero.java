@@ -20,6 +20,7 @@ public class MovimientoDinero {
         this.montoMovimiento = montoMovimiento;
         this.conceptoMovimiento = conceptoMovimiento;
         this.empleadoEncargado = empleadoEncargado;
+
     }
 
     @Override
@@ -28,5 +29,6 @@ public class MovimientoDinero {
                 "Valor de la transacción : " + montoMovimiento +"\n"+
                 "Concepto del Movimiento : " + conceptoMovimiento + "\n" +
                 "Empleado encargado:\n" + empleadoEncargado;
+
     }
 }
