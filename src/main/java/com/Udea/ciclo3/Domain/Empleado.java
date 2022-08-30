@@ -41,7 +41,7 @@ public class Empleado {
                 "\tNombre del empleado : " + nombreEmpleado + "\n" +
                         "\tCorreo del empleado : " + correoEmpleado + "\n" +
                         "\tRol del empleado : " + rolEmpleado + "\n"+
-                        "Empresa a la que Pertenece:\n" + empresaPertenece + "\n";
+                        "Empresa a la que Pertenece:" + empresaPertenece + "\n";
 
     }
     //intento1000

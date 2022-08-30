@@ -28,7 +28,7 @@ public class MovimientoDinero {
         return "\t Registro de transacción  \n\n" +
                 "Valor de la transacción : " + montoMovimiento +"\n"+
                 "Concepto del Movimiento : " + conceptoMovimiento + "\n" +
-                "Empleado encargado:\n" + empleadoEncargado;
+                "Empleado encargado:" + empleadoEncargado +"\n";
 
     }
 }
