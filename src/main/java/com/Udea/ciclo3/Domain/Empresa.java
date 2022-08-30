@@ -22,9 +22,6 @@ public class Empresa {
         this.telefono = telefono;
         this.NIT = NIT;
     }
-
-
-
     public int getId() {
         return id;
     }
