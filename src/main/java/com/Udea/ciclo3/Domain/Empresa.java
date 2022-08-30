@@ -67,13 +67,12 @@ public class Empresa {
 
     @Override
     public String toString() {
-        return "Empresa{" +
-                "id=" + id + "\n" +
-                " nombre='" + nombre + "\n" +
-                " direccion='" + direccion + "\n" +
-                " telefono='" + telefono + "\n" +
-                " NIT='" + NIT + "\n" +
-                '}';
+        return "Empresa:\n\n" +
+                "   id=" + id + "\n" +
+                "   nombre=" + nombre + "\n" +
+                "   direccion=" + direccion + "\n" +
+                "   telefono=" + telefono + "\n" +
+                "   NIT=" + NIT + "\n";
     }
 
 }

@@ -30,7 +30,7 @@ public class Ciclo3Application {
 		empleado01.setRolEmpleado("Administrador");
 
 		MovimientoDinero movimientoDinero = new MovimientoDinero();
-		movimientoDinero.setMontoMovimiento(-667000);
+		movimientoDinero.setMontoMovimiento(150000);
 		movimientoDinero.setConceptoMovimiento("Pago a proveedores");
 		movimientoDinero.setEmpleadoEncargado(empleado01);
 

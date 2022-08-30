@@ -38,10 +38,10 @@ public class Empleado {
     @Override
     public String toString() {
         return
-                "\tNombre del empleado : " + nombreEmpleado + "\n" +
-                        "\tCorreo del empleado : " + correoEmpleado + "\n" +
-                        "\tRol del empleado : " + rolEmpleado + "\n"+
-                        "Empresa a la que Pertenece:" + empresaPertenece + "\n";
+                "Nombre del empleado : " + nombreEmpleado + "\n" +
+                        "Correo del empleado : " + correoEmpleado + "\n" +
+                        "Rol del empleado : " + rolEmpleado + "\n\n"+
+                        "\tEmpresa a la que Pertenece:\n\n" + empresaPertenece;
 
     }
     //intento1000

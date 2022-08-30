@@ -25,10 +25,10 @@ public class MovimientoDinero {
 
     @Override
     public String toString() {
-        return "\t Registro de transacción  \n\n" +
-                "Valor de la transacción : " + montoMovimiento +"\n"+
-                "Concepto del Movimiento : " + conceptoMovimiento + "\n" +
-                "Empleado encargado:" + empleadoEncargado +"\n";
+        return "\tRegistro de transacción  \n\n" +
+                "Valor de la transacción : " + montoMovimiento + "\n" +
+                "Concepto del Movimiento : " + conceptoMovimiento + "\n\n" +
+                "\tEmpleado encargado:\n\n" + empleadoEncargado;
 
     }
 }
