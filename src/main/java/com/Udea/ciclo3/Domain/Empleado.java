@@ -1,8 +1,8 @@
 package com.Udea.ciclo3.Domain;
-
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
+@Table(name = "Empleado")
 public class Empleado {
 
 
