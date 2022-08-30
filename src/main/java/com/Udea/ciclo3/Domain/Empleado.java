@@ -1,20 +1,18 @@
 package com.Udea.ciclo3.Domain;
 import javax.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+
+import javax.persistence.*;
+@Entity
 @Table(name = "Empleado")
 public class Empleado {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
-
-    @Getter
-    @Setter
     private String nombreEmpleado;
-    @Getter @Setter
     private String correoEmpleado;
-
-
+    @ManyToOne
+    @JoinColumn(name = "empresa_pertenece_id")
     private Empresa empresaPertenece;
-    @Getter @Setter
     private String rolEmpleado;
 
     public Empleado() {
@@ -27,12 +25,36 @@ public class Empleado {
         this.rolEmpleado = rolEmpleado;
     }
 
-    public void setempresaPertenece(Empresa empresa) {
-        this.empresaPertenece = empresa;
+    public String getNombreEmpleado() {
+        return nombreEmpleado;
+    }
+
+    public void setNombreEmpleado(String nombreEmpleado) {
+        this.nombreEmpleado = nombreEmpleado;
+    }
+
+    public String getCorreoEmpleado() {
+        return correoEmpleado;
+    }
+
+    public void setCorreoEmpleado(String correoEmpleado) {
+        this.correoEmpleado = correoEmpleado;
     }
 
     public Empresa getEmpresaPertenece() {
         return empresaPertenece;
+    }
+
+    public void setEmpresaPertenece(Empresa empresaPertenece) {
+        this.empresaPertenece = empresaPertenece;
+    }
+
+    public String getRolEmpleado() {
+        return rolEmpleado;
+    }
+
+    public void setRolEmpleado(String rolEmpleado) {
+        this.rolEmpleado = rolEmpleado;
     }
 
     @Override
@@ -40,9 +62,8 @@ public class Empleado {
         return
                 "Nombre del empleado : " + nombreEmpleado + "\n" +
                         "Correo del empleado : " + correoEmpleado + "\n" +
-                        "Rol del empleado : " + rolEmpleado + "\n\n"+
+                        "Rol del empleado : " + rolEmpleado + "\n\n" +
                         "\tEmpresa a la que Pertenece:\n\n" + empresaPertenece;
 
     }
-    //intento1000
 }

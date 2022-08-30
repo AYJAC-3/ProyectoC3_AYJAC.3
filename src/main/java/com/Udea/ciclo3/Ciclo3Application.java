@@ -26,7 +26,7 @@ public class Ciclo3Application {
 		Empleado empleado01 = new Empleado();
 		empleado01.setNombreEmpleado("Diego Florez");
 		empleado01.setCorreoEmpleado("D.florez@gmail.com");
-		empleado01.setempresaPertenece(empresa01);
+		empleado01.setEmpresaPertenece(empresa01);
 		empleado01.setRolEmpleado("Administrador");
 
 		MovimientoDinero movimientoDinero = new MovimientoDinero();
