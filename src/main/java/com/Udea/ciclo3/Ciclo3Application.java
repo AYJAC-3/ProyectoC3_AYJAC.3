@@ -18,9 +18,9 @@ public class Ciclo3Application {
 	public String enviandoTodo() {
 		Empresa empresa01 = new Empresa();
 		empresa01.setNombre("Supermercado Lucy");
-		empresa01.setDireccion("Calle 33 #23-12 Tulua - Valle del cauca");
+		empresa01.setDireccion("Calle 33 # 23-12 Tulua - Valle del cauca");
 		empresa01.setTelefono("6024653099");
-		empresa01.setNIT("800.143.432.921-5");
+		empresa01.setNIT("800.143.-5");
 
 
 		Empleado empleado01 = new Empleado();
