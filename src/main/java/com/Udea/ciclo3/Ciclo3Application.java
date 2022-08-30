@@ -17,20 +17,20 @@ public class Ciclo3Application {
 	@GetMapping(path = "/udea/mintic/program/spring01",produces = "application/json")
 	public String enviandoTodo() {
 		Empresa empresa01 = new Empresa();
-		empresa01.setNombre("Supermercado Lucy");
-		empresa01.setDireccion("Calle 33 # 23-12 Tulua - Valle del cauca");
-		empresa01.setTelefono("6024653099");
+		empresa01.setNombre("AYJAC.3");
+		empresa01.setDireccion("Calle UdeA ciclo3");
+		empresa01.setTelefono("222444666");
 		empresa01.setNIT("800.143.-5");
 
 
 		Empleado empleado01 = new Empleado();
-		empleado01.setNombreEmpleado("Diego Florez");
-		empleado01.setCorreoEmpleado("D.florez@gmail.com");
+		empleado01.setNombreEmpleado("Cristian Gomez");
+		empleado01.setCorreoEmpleado("crgomeza1@poligran.edu.co");
 		empleado01.setEmpresaPertenece(empresa01);
-		empleado01.setRolEmpleado("Administrador");
+		empleado01.setRolEmpleado("Programador - Scrum Master");
 
 		MovimientoDinero movimientoDinero = new MovimientoDinero();
-		movimientoDinero.setMontoMovimiento(150000);
+		movimientoDinero.setMontoMovimiento(250000);
 		movimientoDinero.setConceptoMovimiento("Pago a proveedores");
 		movimientoDinero.setEmpleadoEncargado(empleado01);
 
