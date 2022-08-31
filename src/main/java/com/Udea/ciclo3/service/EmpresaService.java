@@ -3,12 +3,15 @@ package com.Udea.ciclo3.service;
 import com.Udea.ciclo3.Domain.Empresa;
 import com.Udea.ciclo3.repo.EmpresaAYJAC3;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 //Le decimos a Spring que esta clase es de servicios
-@Service
+
+@RestController
 public class EmpresaService {
 
     @Autowired //Conectamos esta clase con repositorio de Empresa
