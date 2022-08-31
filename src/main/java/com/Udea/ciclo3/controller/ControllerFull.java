@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,7 +16,7 @@ public class ControllerFull {
     @Autowired
     EmpresaService empresaService;
 
-    @GetMapping ({"/Empresa","/verEmpresas"})
+    @GetMapping ({"/","/VerEmpresas"})
     public String viewEmpresas(Model model){
         List<Empresa> ListaEmpresa = empresaService.getAllEmpresas();
         model.addAttribute(  "emplist",ListaEmpresa);
