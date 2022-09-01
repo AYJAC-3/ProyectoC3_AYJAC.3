@@ -1,20 +1,17 @@
 package com.Udea.ciclo3.Domain;
-import lombok.Getter;
-import lombok.Setter;
 import javax.persistence.*;
 @Entity
 @Table(name = "movimientoDinero")
 public class MovimientoDinero {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Setter @Getter
+
     private long montoMovimiento;
-    @Setter @Getter
+
     private String conceptoMovimiento;
-    @Setter
+
     @ManyToOne
     @JoinColumn(name = "empleado_encargado_nombre_empleado")
-    @Getter
     private Empleado empleadoEncargado;
 
     public MovimientoDinero() {
@@ -25,6 +22,31 @@ public class MovimientoDinero {
         this.conceptoMovimiento = conceptoMovimiento;
         this.empleadoEncargado = empleadoEncargado;
     }
+
+    public long getMontoMovimiento() {
+        return montoMovimiento;
+    }
+
+    public void setMontoMovimiento(long montoMovimiento) {
+        this.montoMovimiento = montoMovimiento;
+    }
+
+    public String getConceptoMovimiento() {
+        return conceptoMovimiento;
+    }
+
+    public void setConceptoMovimiento(String conceptoMovimiento) {
+        this.conceptoMovimiento = conceptoMovimiento;
+    }
+
+    public Empleado getEmpleadoEncargado() {
+        return empleadoEncargado;
+    }
+
+    public void setEmpleadoEncargado(Empleado empleadoEncargado) {
+        this.empleadoEncargado = empleadoEncargado;
+    }
+
     @Override
     public String toString() {
         return "\tRegistro de transacción  \n\n" +
