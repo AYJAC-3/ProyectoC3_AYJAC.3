@@ -20,6 +20,6 @@ public class ControllerFull {
     public String viewEmpresas(Model model){
         List<Empresa> ListaEmpresa = empresaService.getAllEmpresas();
         model.addAttribute(  "emplist",ListaEmpresa);
-        return  "verEmpresas";
+        return  "verEmpresas"; //Llamamos al HTML
     }
 }

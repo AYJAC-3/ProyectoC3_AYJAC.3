@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Listado de Empresas - Ciclo3</title>
+	<title>Bootstrap Theme Simply Me</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Aqui listado de empresas</h1><br>
-<h3>Con sus respectivas funciones </h3>
+
+<div class="container">
+	<h1> Lista de Empresas</h1>
+	<!--Dibujamos la tabla-->
+	<table class="table">
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Dirección</th>
+			<th>Telefono</th>
+			<th>NIT</th>
+			<th>Editar</th>
+			<th>Eliminar</th>
+		</tr>
+		<!--Lenamos la tabla dibujada-->
+		<!--En nuestro controller, creamos en viewEmpresa un modelo con un atrubuto llamado emplist donde esta guardado todas las listas de las empresas-->
+		<tr th:each="empresa : ${emplist}">
+			<td th:text="${empresa.id}}"></td>
+			<td th:text="${empresa.nombre}}"></td>
+			<td th:text="${empresa.direccion}}"></td>
+			<td th:text="${empresa.telefono}}"></td>
+			<td th:text="${empresa.NIT}}"></td>
+			<td><button type="button" class="btn btn-warning"><a th:href="https://github.com/AYJAC-3">Editar</a></button></td>
+			
+		</tr>
+	</table>
+</div>
+
 </body>
 </html>
