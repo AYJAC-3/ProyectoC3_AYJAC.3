@@ -18,8 +18,8 @@ public class ControllerFull {
 
     @GetMapping ({"/","/VerEmpresas"})
     public String viewEmpresas(Model model){
-        List<Empresa> ListaEmpresa = empresaService.getAllEmpresas();
-        model.addAttribute(  "emplist",ListaEmpresa);
-        return  "verEmpresas"; //Llamamos al HTML
+        List<Empresa> listaEmpresa = empresaService.getAllEmpresas();
+        model.addAttribute(  "emplist",listaEmpresa);
+        return "verEmpresas"; //Llamamos al HTML
     }
 }
