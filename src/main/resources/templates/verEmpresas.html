@@ -40,13 +40,13 @@
 			<td th:text="${empresa.direccion}}"></td>
 			<td th:text="${empresa.telefono}}"></td>
 			<td th:text="${empresa.NIT}}"></td>
-			<td><button type="button" class="btn btn-warning"><a th:href="@{/editarEmpresa}">Editar</a></button></td>
-			<td><button type="button" class="btn btn-danger"><a th:href="@{/eliminarEmpresa}">Eliminar</a></button></td>
+			<td><button type="button" class="btn btn-warning"><a th:href="@{/EditarEmpresa}">Editar</a></button></td>
+			<td><button type="button" class="btn btn-danger"><a th:href="@{/EliminarEmpresa}">Eliminar</a></button></td>
 		</tr>
 	</table>
 	<!-- Vamor a crear un boton que sirve para agregar nuevas empresas -->
 	
-	<button type="button" class="btn btn-info"><a href="/agregarEmpresa">Agregar Nueva Empresas</a></button>
+	<button type="button" class="btn btn-info"><a th:href="@{/AgregarEmpresa}">Agregar Nueva Empresas</a></button>
 </div>
 
 </body>
